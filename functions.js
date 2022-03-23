@@ -20,6 +20,7 @@ export function forceCaesar(str) {
 }
 
 // Fonction de calcul du volume d'un cône
-export function coneVolume() {
-
+export function coneVolume(rayon, hauteur) {
+    let volume = rayon * rayon * hauteur * Math.PI * (1 / 3);
+    return volume;
 }
