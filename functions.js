@@ -19,8 +19,18 @@ export function forceCaesar(str) {
     }
 }
 
-// Fonction de calcul du volume d'un cône
-export function coneVolume(rayon, hauteur) {
-    let volume = rayon * rayon * hauteur * Math.PI * (1 / 3);
-    return volume;
+// Fonction de calcul du volume d'un cône en m3
+export function coneVolume(radius, height) {
+    let volume = radius * radius * height * Math.PI * (1 / 3);
+    console.log('le volume de ce cône est de ' + volume + " m3");
+}
+
+// Fonction permettant de déterminer si un nombre est pair ou impair
+export function pairOuIimpair(number) {
+    if (number % 2 == 0) {
+        console.log(volume + " est un nombre pair");
+    }
+    else {
+        console.log(volume + " est un nombre impair");
+    }
 }
