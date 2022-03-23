@@ -28,9 +28,17 @@ export function coneVolume(radius, height) {
 // Fonction permettant de déterminer si un nombre est pair ou impair
 export function pairOuIimpair(number) {
     if (number % 2 == 0) {
-        console.log(volume + " est un nombre pair");
+        console.log(number + " est un nombre pair");
     }
     else {
-        console.log(volume + " est un nombre impair");
+        console.log(number + " est un nombre impair");
     }
+}
+
+// Fonction permettant de déterminer la suite de fibonacci d'un nombre par récursivité
+export function fibonacci(number) {
+    if (number < 2) {
+        return number;
+    }
+    return fibonacci(number - 1) + fibonacci(number - 2);
 }
